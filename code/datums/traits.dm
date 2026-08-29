@@ -702,6 +702,13 @@
 			potential_mats[default_material] = 0
 		return getMaterial(weighted_pick(potential_mats))
 
+/datum/trait/eyepatch
+	name = "Eyepatch"
+	desc = "You lost your eye in some epic battle, or maybe you just want to have a more pirate-like look."
+	id = "eyepatch"
+	icon_state = "bald" //Using this as a placeholder untill i get a real icon
+	category = list("trinkets")
+	points = 0
 
 // Skill - White Border
 

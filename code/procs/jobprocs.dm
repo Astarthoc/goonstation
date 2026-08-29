@@ -712,6 +712,8 @@ Equip items from body traits.
 	else if (src.traitHolder && src.traitHolder.hasTrait("cane"))
 		var/picked = pick(typesof(/obj/item/cane/wooden))
 		trinket = new picked(src)
+	else if (src.traitHolder && src.traitHolder.hasTrait("eyepatch"))
+		trinket = new/obj/item/clothing/glasses/eyepatch(src)
 	else
 		trinket = new T(src)
 
